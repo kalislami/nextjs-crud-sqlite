@@ -1,0 +1,52 @@
+### read
+
+GET  http://localhost:3000/api/products
+
+### create
+
+POST http://localhost:3000/api/products
+
+{
+  "nama" : "hp lagi",
+  "deskripsi" : "redmi note 9 pro",
+  "harga" : 2700000,
+  "stok" : 120,
+  "foto" : "hp.png",
+  "suplier_id" : 1
+}
+
+### update
+
+PATCH  http://localhost:3000/api/products?id=16
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nama" : "Lenovo",
+  "deskripsi" : "laptop bekas tapi masih bagus",
+  "harga" : 2100000,
+  "stok" : 50,
+  "foto" : "16.png",
+  "suplier_id" : 3
+}
+
+### delete
+
+DELETE  http://localhost:3000/api/products?id=10
+
+### put (not allowed)
+
+PUT  http://localhost:3000/api/products?id=16
+
+### genarate suplier data
+
+POST  http://localhost:3000/api/suplier
+
+### clear suplier data
+
+DELETE  http://localhost:3000/api/suplier
+
+### get suplier data
+
+GET   http://localhost:3000/api/suplier
+
