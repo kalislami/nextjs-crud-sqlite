@@ -87,12 +87,12 @@ export default function FormProduct({ onCancel, refetchProduct, editId, onAlert 
             || file.type === 'image/jpeg'
             || file.type === 'image/jpg'
         )) {
-            alert('invalid file')
+            onAlert('invalid file')
             return
         }
 
         if (file.size > 2000000) {
-            alert('file size terlalu besar (max 2mb)')
+            onAlert('file size terlalu besar (max 2mb)')
             return
         }
 
